@@ -18,6 +18,10 @@ import type {Page,Browser} from '@playwright/test';
         await page.getByText('Request a demo').click();
     });
 
+     test('Request a Demo fuunctionality Request Demo', async() => {        
+        await page.getByText('Request a demo').click();
+    });
+
     test('Book a Demo here functionality', async() =>{
         await page.getByText('Request a demo').click();
         const emailID = page.locator("#Email");
